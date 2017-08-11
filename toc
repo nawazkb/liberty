@@ -48,7 +48,6 @@ Liberty for Java
 
     buildpackDefaults.md
     [Managing Liberty and Node.js apps](../../manageapps/app_mng.html)
-    [Getting started with IBM Monitoring and Analytics for Bluemix Service](../../services/monana/index.html#monana_oview)
     {: .navgroup-end}
 
     {: .navgroup id="help"}
