@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-07-25"
+lastupdated: "2017-08-08"
 
 ---
 
@@ -15,13 +15,13 @@ lastupdated: "2017-07-25"
 {:download: .download}
 {:app_name: data-hd-keyref="app_name"}
 
-# Getting started with Liberty on Bluemix
+# Getting started tutorial
 
 * {: download} Congratulations, you deployed a Hello World sample application on {{site.data.keyword.Bluemix}}!  To get started, follow this step-by-step guide. Or, <a class="xref" href="http://bluemix.net" target="_blank" title="(Download sample code)"><img class="hidden" src="../../images/btn_starter-code.svg" alt="Download application code" />download the sample code</a> and explore on your own.
 
-By following this guide, you'll set up a development environment, deploy an app locally and on {{site.data.keyword.Bluemix}}, and integrate a {{site.data.keyword.Bluemix}} database service in your app.
+By following this tutorial, you'll set up a development environment, deploy an app locally and on {{site.data.keyword.Bluemix}}, and integrate a {{site.data.keyword.Bluemix}} database service in your app.
 
-## Prerequisites
+## Before you begin
 {: #prereqs}
 
 You'll need the following accounts and tools:
@@ -33,7 +33,7 @@ You'll need the following accounts and tools:
 
 To develop in Eclipse with {{site.data.keyword.eclipsetoolsfull}}, you will also need to [download the tools. ![External Link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/wasdev/downloads/#asset/tools-IBM_Eclipse_Tools_for_Bluemix){: new_window}
 
-## 1. Clone the sample app
+## Step 1: Clone the sample app
 {: #clone}
 
 First, clone the sample app GitHub repo.
@@ -43,7 +43,7 @@ git clone https://github.com/IBM-Bluemix/get-started-java
   {: pre}
 
 
-## 2. Run the app locally using command line
+## Step 2: Run the app locally using command line
 {: #run_locally}
 
 Use Maven to build your source code and run the resulting app.
@@ -72,7 +72,7 @@ When you see the message *The server defaultServer is ready to run a smarter pla
 
 To stop your app, press *Ctrl-C* in the command-line window where you started the app.
 
-## 3. Prepare the app for deployment
+## Step 3: Prepare the app for deployment
 {: #prepare}
 
 To deploy to {{site.data.keyword.Bluemix_notm}}, it can be helpful to set up a manifest.yml file. The manifest.yml includes basic information about your app, such as the name, how much memory to allocate for each instance and the route. We've provided a sample manifest.yml file in the `get-started-java` directory.
@@ -93,7 +93,7 @@ Open the manifest.yml file, and change the `name` from `GetStartedJava` to your 
 In this manifest.yml file, **random-route: true** generates a random route for your app to prevent your route from colliding with others.  If you choose to, you can replace **random-route: true** with **host: myChosenHostName**, supplying a host name of your choice. [Learn more...](/docs/manageapps/depapps.html#appmanifest)
 {: tip}
 
-## 4. Deploy to {{site.data.keyword.Bluemix_notm}}
+## Step 4: Deploy to {{site.data.keyword.Bluemix_notm}}
 {: #deploy}
 
 Deploy your app to one of the following Bluemix regions. For optimal latency, choose a region that's closest to your users.
@@ -132,7 +132,7 @@ cf apps
 You can troubleshoot errors in the deployment process by using the `cf logs <Your-App-Name> --recent` command.
 {: tip}  
 
-## 5. Developing using Eclipse
+## Step 5: Develop using Eclipse
 {: #eclipse}
 
 {{site.data.keyword.eclipsetoolsfull}} provides plug-ins that can be installed into an existing Eclipse environment to assist in integrating your integrated development environment (IDE) with {{site.data.keyword.Bluemix_notm}}.
@@ -176,7 +176,7 @@ cf push
 
 Now you have run your code both locally and on the cloud!
 
-## 6. Add a database
+## Step 6: Add a database
 {: #add_database}
 
 Next, we'll add a NoSQL database to this application and set up the application so that it can run locally and on {{site.data.keyword.Bluemix_notm}}.
@@ -190,7 +190,7 @@ Next, we'll add a NoSQL database to this application and set up the application 
 Environment variables enable you to separate deployment settings from your source code. For example, instead of hardcoding a database password, you can store this in an environment variable which you reference in your source code. [Learn more...](/docs/manageapps/depapps.html#app_env)
 {: tip}
 
-## 7. Use the database
+## Step 7: Use the database
 {: #use_database}
 We're now going to update your local code to point to this database. We'll store the credentials for the services in a properties file. This file will get used ONLY when the application is running locally. When running in {{site.data.keyword.Bluemix_notm}}, the credentials will be read from the `VCAP_SERVICES` environment variable.
 
