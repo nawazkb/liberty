@@ -14,7 +14,7 @@ lastupdated: "2017-08-14"
 
 ## A list of the latest updates in the Liberty buildpack.
 
-### August 14, 2017: Updated Liberty buildpack v3.12-20170811-2258
+### August 14, 2017: Updated Liberty buildpack v3.12-20170814-1322
 * The monthly Liberty runtime version was updated to the [2017.8.0.0](https://developer.ibm.com/wasdev/blog/2017/08/04/beta-websphere-liberty-tools-august-2017/) release.
 * The buildpack also contains updated IBM JREs: version 8 SR4 FP10 and version 7.1 SR4 FP10. 
 * JRE 8 includes Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files.
