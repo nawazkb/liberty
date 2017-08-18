@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-07-14"
+lastupdated: "2017-08-14"
 
 ---
 
@@ -13,6 +13,12 @@ lastupdated: "2017-07-14"
 {: #latest_updates}
 
 ## A list of the latest updates in the Liberty buildpack.
+
+### August 14, 2017: Updated Liberty buildpack v3.12-20170814-1322
+* The monthly Liberty runtime version was updated to the [2017.8.0.0](https://developer.ibm.com/wasdev/blog/2017/08/04/beta-websphere-liberty-tools-august-2017/) release.
+* The buildpack also contains updated IBM JREs: version 8 SR4 FP10 and version 7.1 SR4 FP10. 
+* JRE 8 includes Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files.
+* A buildpack bug that prevented Liberty apps from [shutting down gracefully](https://docs.cloudfoundry.org/devguide/deploy-apps/app-lifecycle.html#shutdown) was fixed.
 
 ### July 14, 2017: Updated Liberty buildpack v3.11-20170710-0312
 * The default Liberty runtime version `17.0.0.2` was updated to include the IFPI83713 iFix.
